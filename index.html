@@ -1,15 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- required meta tags for a mobile first design strategy  -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter A Cardillo, Portfolio</title>
-</head>
-<body>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<h1>Hello World</h1>
-<h3>Beginning Portfolio HW Project</h3>
+    <!-- bootStrap CSS stylesheet  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Peter A Cardillo, Portfolio</title>
+
+    <!-- style="float:left; margin-right:15px; margin-bottom:2px" -->
+    <!-- direct styling  -->
+    <style>
+      .wrap {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 2px;
+      }
+
+      .pSpace{
+        padding-top: 15px;
+        padding-left:15px;
+        padding-right:15px;
+      }
+
+      #bkgndImg{
+        background-image: url(./img/cardboard.png);
+        background-size: 100% 100%;
+      }
+
+      hr {
+        border: none;
+        border-top: 3px double #333;
+        color: #333;
+        overflow: visible;
+        text-align: center;
+        height: 3px;
+      }
+
+      .footer {
+        /* position: absolute; */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        /* background-color: #a4c7a7; */
+      }
+    </style>    
+</head>
+
+
+
+
+<body id="bkgndImg">
+    <!-- start nav  -->
+    <!-- modified "Nav" from bootstrap Documentation:  https://getbootstrap.com/docs/4.1/components/navbar/ -->
+    <header>      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" d-lg-inline-block href="index.html">Peter A Cardillo</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">        
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!-- added ml-auto class in the <div> & <a> tags to move links to the right align under the hamburger toggle button  -->
+            <!-- added text-right class to align to rightmost border of element  -->
+            <div class="navbar-nav ml-auto">
+              <!-- added accessability for screen reader and focused keyboard when tabbing  -->
+              <a class="nav-item nav-link ml-auto text-right active" href="#">About<span class="sr-only">Home Page about me information</span></a>
+              <a class="nav-item nav-link ml-auto text-right" href="./pages/contact.html">Contact</a>
+              <a class="nav-item nav-link ml-auto text-right" href="./pages/portfolio.html">Portfolio</a>
+              <!-- added accessability for focused keyboard when tabbing thru menu to main page  -->
+              <a class="sr-only sr-only-focusable" href="#">Skip to main About content</a>               
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!-- end nav  -->
+
+
+
+    <!-- Start media object  -->
+    <!-- https://getbootstrap.com/docs/4.0/layout/media-object/  -->
+    <div class="media">
+      <!-- added some custom style .wrap to img tag to float left, and .pSpace to the paragraphs for margin spacing -->
+      <div class="media-body">
+        <img class="align-self-start mr-3 wrap pSpace" src="./img/Peter-Cardillo-Profile-Pic.jpg" alt="Generic placeholder image" width="250" height="325"> 
+        <h5 class="mt-0 pSpace">Top-aligned media</h5>
+        <p class="pSpace">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+        <p class="pSpace">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      </div>
+    </div>
+    <!-- end media object  -->
+
+
+
+
+  <!-- Start of Main Content  -->
+  <br><hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="page-header">
+          <h1 style="text-align: center;">About Me</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique,
+              nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae
+              felis vulputate pretium. Nullam commodo, est ac auctor ornare, eros nisi fringilla sem,
+              non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus,
+              luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et
+              neque fringilla ultricies. Aenean at feugiat elit, a posuere justo. Pellentesque egestas
+              dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id
+              posuere sem congue a.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Create Card taking up 4 Columns-->
+      <div class="col-md-4">
+        <div class="card mt-2">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <img src="./img/STLogo-2019-1200x900.jpg" alt="Placeholder" class="img-thumbnail" width="250" height="100">
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- End of Main Content  -->
+
+
+
+
+
+  <!-- sticky Footer  -->
+  <!-- https://getbootstrap.com/docs/4.0/examples/sticky-footer/  -->
+  <!-- https://stackoverflow.com/questions/46722697/bootstrap-4-sticky-footer-not-sticking/49382867#49382867 -->
+  <footer class="footer bg-light">
+    <div class="container" style="text-align: center">
+      <span class="text-muted"><a href="https://www.streamingTurtles.com"><small>Copyright &copy; My Website</small></a></span>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+<!-- jQuery, Popper.js & bootStrap JavaScript plugin -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
 </body>
