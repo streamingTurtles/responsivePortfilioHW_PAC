@@ -10,7 +10,7 @@
 
     <title>Peter A Cardillo, Contact Page</title>
 
-    <!-- style="float:left; margin-right:15px; margin-bottom:2px" -->
+
     <!-- direct styling  -->
     <style>
       .wrap {
@@ -47,6 +47,7 @@
         height: 60px;
         line-height: 60px;
         /* background-color: #a4c7a7; */
+
       }
     </style>    
 </head>
@@ -56,10 +57,9 @@
 
 <body id="bkgndImg">
     <!-- start nav  -->
-    <!-- modified "Nav" from bootstrap Documentation:  https://getbootstrap.com/docs/4.1/components/navbar/ -->
     <header>      
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" d-lg-inline-block href="../index.html">Peter A Cardillo</a>
+          <a class="navbar-brand d-lg-inline-block" href="../index.html">Peter A Cardillo</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">        
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -84,16 +84,13 @@
 
 
 <!-- start of form section  -->
-<!-- https://mdbootstrap.com/docs/jquery/forms/contact/  -  source link  -->
-<!-- https://www.codeply.com/go/ayraB3tjSd/bootstrap-4-vertical-center  - fiddle with jumbotron centering -->
-<!-- begin form section  -->
 <section class="mb-4">
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
     <p class="text-center w-responsive mx-auto mb-5"><i>please enter you information</i></p>
 
     <div class="row">
         <!-- start contact form entry section -->
-        <section class="jumbotron container">
+        <div class="jumbotron container">
             <div class="col-md-9 mb-md-0 mb-5">
                 <form id="contact-form" name="contact-form" action="mail.php" method="POST">
     
@@ -139,7 +136,8 @@
                         <div class="col-md-12">
     
                             <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <!-- <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>  -->
+                                <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                                 <label for="message">Your message</label>
                             </div>
     
@@ -157,7 +155,7 @@
                 </div>
                 <div class="status"></div>
             </div>
-        </section>
+        </div>
         <!-- end contact form entry section -->
 
         <!--Grid column-->
@@ -198,8 +196,6 @@
 
 
   <!-- sticky footer start  -->
-  <!-- https://getbootstrap.com/docs/4.0/examples/sticky-footer/  -->
-  <!-- https://stackoverflow.com/questions/46722697/bootstrap-4-sticky-footer-not-sticking/49382867#49382867 -->
   <footer class="footer bg-light">
     <div class="container" style="text-align: center">
       <span class="text-muted"><a href="https://www.streamingTurtles.com"><small>Copyright &copy; My Website</small></a></span>

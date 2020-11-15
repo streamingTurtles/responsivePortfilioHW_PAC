@@ -10,7 +10,7 @@
 
     <title>Peter A Cardillo, Portfolio Page</title>
 
-    <!-- style="float:left; margin-right:15px; margin-bottom:2px" -->
+
     <!-- direct styling  -->
     <style>
       .wrap {
@@ -46,15 +46,11 @@
         width: 100%;
         height: 60px;
         line-height: 60px;
-        /* removed this color since the sticky footer color is class driven, the inLine style doesn't work  */
-        /* background-color: #a4c7a7; */
       }
 
 
 
       /* portfolio page styles begin  */
-      /* CSS styles used for Portfolio Page, specifically for  .jumbotron class  & linkable gallery images  */
-      /* https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap  */
       .vertical-center {
         min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
         min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -79,10 +75,9 @@
 
 <body id="bkgndImg">
     <!-- start navbar  -->
-    <!-- modified "Nav" from bootstrap Documentation:  https://getbootstrap.com/docs/4.1/components/navbar/ -->
     <header>      
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" d-lg-inline-block href="../index.html">Peter A Cardillo</a>
+          <a class="navbar-brand d-lg-inline-block" href="../index.html">Peter A Cardillo</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">        
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -109,23 +104,21 @@
  
 
   <!-- start portfolio gallery section -->
-  <!-- https://getbootstrap.com/docs/4.3/layout/grid/   -->
-  <!-- http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg  - filler image content  -->    
-    <section class="jumbotron vertical-center"> 
+    <div class="jumbotron vertical-center"> 
         <hr>
         <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img class="img-responsive" class="img-thumbnail" width="350" height="250" src="../img/st-pic-1.png"/></a></div>
-                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img class="img-responsive" class="img-thumbnail" width="350" height="250" src="../img/st-pic-2.png"/></a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-1.png"/></a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-2.png"/></a></div>
                         <div class="w-100"></div>
-                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img class="img-responsive" class="img-thumbnail" width="350" height="250" src="../img/st-pic-3.png"/></a></div>
-                        <div class="col-md-6 col-sm-5 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img class="img-responsive" class="img-thumbnail" width="350" height="250" src="../img/st-pic-4.png"/></a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-3.png"/></a></div>
+                        <div class="col-md-6 col-sm-5 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-4.png"/></a></div>
                         <div class="w-100"></div>
-                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img class="img-responsive" class="img-thumbnail" width="350" height="250" src="../img/st-pic-5.png"/></a></div>
-                        <div class="col-md-6 col-sm-5 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img class="img-responsive" class="img-thumbnail" width="350" height="250" src="../img/st-pic-6.png"/></a></div>    
+                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-5.png"/></a></div>
+                        <div class="col-md-6 col-sm-5 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-6.png"/></a></div>    
                     </div>
         </div>       
-    </section>
+    </div>
 <!-- end gallery section  -->
 
 
@@ -137,8 +130,6 @@
 
 
     <!-- sticky footer start  -->
-    <!-- https://getbootstrap.com/docs/4.0/examples/sticky-footer/  -->
-    <!-- https://stackoverflow.com/questions/46722697/bootstrap-4-sticky-footer-not-sticking/49382867#49382867 -->
     <footer class="footer bg-light">
     <div class="container" style="text-align: center">
         <span class="text-muted"><a href="https://www.streamingTurtles.com"><small>Copyright &copy; My Website -  www.streamingTurtles.com</small></a></span>
