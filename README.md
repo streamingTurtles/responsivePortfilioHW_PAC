@@ -59,11 +59,11 @@ show previous work and request contact information for potential work.
 ---
 ## github repo link & live web link
 
-* Application deployed at live URL:
+* Application GitHub Repo URL:
 [gitHub repo link](https://github.com/streamingTurtles/responsivePortfilioHW_PAC)
 
-* Application GitHub URL:
-[link to live website on gitHub](https://streamingturtles.github.io/responsivePortfilioHW_PAC/)
+* Application Live GitHub URL:
+[live web link](https://streamingturtles.github.io/responsivePortfilioHW_PAC/)
 
 
 - - -
